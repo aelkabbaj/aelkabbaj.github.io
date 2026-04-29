@@ -2,17 +2,17 @@ cv:
   name: Anass El Kabbaj
   label: FPGA & Embedded Systems Engineer
   email: aelkabbaj@proton.me
-  location: Bordeaux, France
-  image: "Anass.jpg"
-  summary: "Final-year Embedded Systems Engineering student with practical experience in FPGA design and High-Level Synthesis. Eager to deepen my technical expertise and tackle complex hardware challenges. Seeking a PhD position in France starting October 2026, focused on FPGA design or Embedded Systems."
+  location: Île-de-France, France
+  image: "Anass_vertical.jpg"
+  summary: "Final-year Embedded Systems Engineering student with practical experience in FPGA design and High-Level Synthesis. Eager to deepen my technical expertise and tackle complex hardware challenges."
 
   social_networks:
     - network: LinkedIn
       username: anass-el-kabbaj
 
   address:
-    city: Bordeaux
-    countryCode: FR
+    city: Île-de-France
+    region: France
 
   sections:
     Education:
@@ -23,7 +23,7 @@ cv:
         start_date: 2023-09
         end_date: Present
         highlights:
-          - "Key Modules: Computer Architecture, VHDL/HLS, Embedded Linux, Hardware Security, Signal Processing."
+          - "Key Modules: Computer Architecture, VHDL, Embedded Systems, IoT, Hardware Security, Signal Processing."
 
       - institution: CPGE Mohammed V
         location: Casablanca, Morocco
@@ -41,8 +41,8 @@ cv:
         start_date: 2026-03
         end_date: Present
         highlights:
-          - "Context: Evaluation and optimization of a High-Level Synthesis (HLS) design flow for NanoXplore FPGAs."
-          - "Methodology: Benchmarking HLS tools to eventually incorporate them into NanoXplore design flow."
+          - "Evaluation and optimization of a High-Level Synthesis (HLS) design flow for NanoXplore FPGAs."
+          - "Benchmarking HLS tools on different applications to evaluate the intrest of HLS in NanoXplore FPGA design flow."
           - "Tools: Vitis HLS, Bambu HLS, Siemens Catapult, C/C++, VHDL/Verilog, Python scripting."
 
       - company: Laboratoire d’Astrophysique de Bordeaux (LAB)
@@ -51,9 +51,9 @@ cv:
         start_date: 2025-05
         end_date: 2025-09
         highlights:
-          - "Context: Digitization and transmission module (DGSPOT) for the ALMA telescope upgrade."
-          - "Achievement: Development of VHDL/Verilog DSP modules (Histograms, Lag-0 Correlation) on Intel Agilex 7."
-          - "Methodology: From MATLAB simulations to RTL implementation. Functional verification and on-target validation."
+          - "Digitization and transmission module (DGSPOT) for the ALMA telescope upgrade."
+          - "Development of VHDL/Verilog DSP modules (Histograms, Lag-0 Correlation) on Intel Agilex 7."
+          - "From MATLAB simulations to RTL implementation. Functional verification and on-target validation."
           - "Tools: Quartus Prime Pro, ModelSim, Synplify, MATLAB."
 
       - company: EirSpace (Aerospace Association)
@@ -66,14 +66,6 @@ cv:
           - "Integration: Mechanical assembly, recovery system testing, and flight chain validation."
 
     Projects:
-      - name: Thales RISC-V Challenge
-        summary: "SystemVerilog, C, Architecture"
-        start_date: 2025-01
-        end_date: 2025-12
-        highlights:
-          - "Optimization of an FFT algorithm on a soft-core CV32A6 (RISC-V) processor."
-          - "Integration of Custom Instructions to offload intensive calculations to a dedicated hardware coprocessor."
-
       - name: Long-Range Telemetry System
         summary: "LoRa, ESP32, C++"
         start_date: 2024-01
@@ -84,14 +76,12 @@ cv:
 
     Skills:
       - name: Hardware & FPGA
-        level: Advanced
         icon: fa-solid fa-microchip
-        keywords: "VHDL, (System)Verilog, HLS (Vitis/Bambu), RISC-V, Quartus, Vivado"
+        keywords: "VHDL, HLS, RISC-V, Quartus, Vivado"
         
       - name: Software & Tools
-        level: Intermediate
         icon: fa-solid fa-code
-        keywords: "C/C++, Python, Embedded Linux, MATLAB, Git, LaTeX"
+        keywords: "C/C++, Python, Embedded Systems, IoT, MATLAB, Git, LaTeX"
 
     Languages:
       - name: Arabic
@@ -99,12 +89,14 @@ cv:
       - name: French
         summary: "Bilingual"
       - name: English
-        summary: "C1"
+        summary: "IELTS C1"
 
     Interests:
       - name: Astronomy
         icon: fa-solid fa-star
       - name: Ham Radio
-        icon: fa-solid fa-broadcast-tower
+        icon: fa-solid fa-walkie-talkie
       - name: DIY Electronics
-        icon: fa-solid fa-plug
+        icon: fa-solid fa-robot
+      - name: Hiking
+        icon: fa-solid fa-person-hiking
