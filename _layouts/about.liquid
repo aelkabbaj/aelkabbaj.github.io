@@ -23,7 +23,7 @@ layout: default
         {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
         {% assign profile_image_alt = 'Photo of ' | append: site.first_name | append: ' ' | append: site.last_name %}
         {%
-          include figure.liquid loading="eager" path=profile_image_path class="img-fluid z-depth-1 rounded" sizes="(min-width: 576px) 240px, 180px"
+          include figure.liquid loading="eager" path=profile_image_path sizes="(min-width: 576px) 288px, 268px"
           alt=profile_image_alt cache_bust=true
         %}
       </div>
