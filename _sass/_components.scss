@@ -224,17 +224,30 @@ ul.task-list input[type="checkbox"] {
   gap: 3rem;
   margin: 3rem 0 2rem;
 
+  // The photo is cropped by its frame: the frame has the crop's shape, and the image is scaled
+  // and shifted inside it. Crops are in pixels of the 1070x1200 photo (assets/img/Anass_profile.jpg):
+  // image width = 1070 / crop width; margins = -(crop x) / crop width and -(crop y) / crop width.
   .profile-card-photo {
     flex: 0 0 240px;
 
     figure {
       margin: 0;
+      overflow: hidden;
+      border-radius: 0.25rem;
+      box-shadow:
+        0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
+      // Desktop crop: x 64, y 50, 892 x 1000 (about 1.2x zoom on the full photo).
+      aspect-ratio: 892 / 1000;
     }
 
     img {
-      width: 100%;
-      aspect-ratio: 4 / 5;
-      object-fit: cover;
+      display: block;
+      max-width: none;
+      height: auto;
+      width: 119.96%;
+      margin-left: -7.17%;
+      margin-top: -5.61%;
     }
   }
 
@@ -295,9 +308,15 @@ ul.task-list input[type="checkbox"] {
       flex-basis: auto;
       width: 180px;
 
-      img {
+      // Phone crop: x 137, y 105, 720 x 720 (face and shoulders).
+      figure {
         aspect-ratio: 1 / 1;
-        object-position: 50% 25%;
+      }
+
+      img {
+        width: 148.61%;
+        margin-left: -19.03%;
+        margin-top: -14.58%;
       }
     }
 

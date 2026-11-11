@@ -6,13 +6,13 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Anass
 middle_name:
 last_name: EL KABBAJ
-contact_note: >
-  “What I cannot create, I do not understand.” — Richard Feynman
+contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Anass El Kabbaj, FPGA Development Engineer based in Sèvres, France.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+hide_footer: true # true hides the footer band (copyright and the footer_text above) on every page
 keywords: FPGA, VHDL, SystemVerilog, HLS, embedded systems, space, NanoXplore, RISC-V # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚙️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
