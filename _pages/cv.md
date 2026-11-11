@@ -1,7 +1,7 @@
 ---
 layout: cv
 permalink: /cv/
-title: resume
+title: About
 nav: true
 nav_order: 5
 cv_pdf: /assets/pdf/Resume_Anass_EL_KABBAJ.pdf # you can also use external links here

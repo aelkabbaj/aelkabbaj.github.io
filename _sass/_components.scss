@@ -215,6 +215,102 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Profile card: about page without bio text (see _layouts/about.liquid).
+// Photo on the left, name / title / details / links on the right; stacked on phones.
+.profile-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin: 3rem 0 2rem;
+
+  .profile-card-photo {
+    flex: 0 0 240px;
+
+    figure {
+      margin: 0;
+    }
+
+    img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+    }
+  }
+
+  .profile-card-text {
+    flex: 0 1 420px;
+  }
+
+  .post-header {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .more-info {
+    font-family: monospace;
+    margin: 0.25rem 0 1rem;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .social {
+    text-align: left;
+
+    .contact-icons {
+      font-size: 2.2rem;
+
+      a {
+        margin-right: 0.9rem;
+
+        svg {
+          width: 2rem;
+          height: 2.2rem;
+        }
+
+        img {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
+
+    .contact-note {
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .profile-card {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+
+    .profile-card-photo {
+      flex-basis: auto;
+      width: 180px;
+
+      img {
+        aspect-ratio: 1 / 1;
+        object-position: 50% 25%;
+      }
+    }
+
+    .social {
+      text-align: center;
+
+      .contact-icons a {
+        margin: 0 0.45rem;
+      }
+    }
+  }
+}
+
 .wechat-modal {
   display: none;
   position: fixed;
