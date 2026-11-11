@@ -80,10 +80,10 @@ bundle exec jekyll serve --port 4000   # Run at http://localhost:4000
 
 ### Important Build Requirements
 
-- **ImageMagick must be installed** – Required for image processing plugins
+- **ImageMagick must be installed** – Required for image processing plugins (or set `imagemagick.enabled: false`)
   - Docker: Installed automatically
   - Local: `sudo apt-get install imagemagick` (Linux) or `brew install imagemagick` (Mac)
-- **nbconvert must be upgraded before build** – `pip3 install --upgrade nbconvert`
+- **nbconvert is only needed for Jupyter notebooks** – This site has none; if one is added under `assets/jupyter/`, run `pip3 install --upgrade nbconvert` before building (and add it back to `deploy.yml`)
 - **Always set JEKYLL_ENV=production for production builds** – Required for CSS/JS minification
 
 ## Project Layout & Key Files
@@ -124,8 +124,8 @@ When making changes:
 ### GitHub Workflows (in `.github/workflows/`)
 
 - **deploy.yml** – Main deployment workflow (runs on push/PR to main/master)
-  - Sets up Ruby 3.3.5, Python 3.13
-  - Installs imagemagick, nbconvert
+  - Sets up Ruby 3.3.5; the whole job times out after 20 minutes
+  - Installs imagemagick with a 5-minute limit; if Ubuntu's package servers are unreachable, it builds with `imagemagick.enabled: false` (images at original size) instead of failing
   - Runs `bundle exec jekyll build` with JEKYLL_ENV=production
   - Runs purgecss for CSS optimization
   - Commits built site to gh-pages branch
