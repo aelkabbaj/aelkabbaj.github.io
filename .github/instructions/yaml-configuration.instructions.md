@@ -98,13 +98,11 @@ CV content in **RenderCV format** (recommended approach for generating professio
 **Key Files:**
 
 - [`_data/cv.yml`](_data/cv.yml) — Main CV content in RenderCV format
-- [`assets/rendercv/design.yaml`](assets/rendercv/design.yaml) — Design and styling customization
-- [`assets/rendercv/locale.yaml`](assets/rendercv/locale.yaml) — Localization and text formatting
-- [`assets/rendercv/settings.yaml`](assets/rendercv/settings.yaml) — RenderCV-specific settings
+- [`assets/pdf/Resume_Anass_EL_KABBAJ.pdf`](assets/pdf/Resume_Anass_EL_KABBAJ.pdf) — Downloadable resume, linked from the CV page and the homepage
 
 **Usage:** Rendered by `cv.liquid` layout on CV page; displayed in `about.liquid` on home page.
 
-**Automatic PDF Generation:** When using RenderCV format, a GitHub Actions workflow (`render-cv.yml`) automatically generates a PDF version whenever you push changes to `_data/cv.yml`. The generated PDF is saved to `assets/rendercv/rendercv_output/` and can be linked via `cv_pdf` setting in `_config.yml`.
+**Resume PDF on this site:** The PDF is written in Overleaf, which is the source of truth for the resume. There is no automatic PDF generation (the `render-cv.yml` workflow and `assets/rendercv/` were removed). When the resume changes, replace the PDF under the same filename and update `_data/cv.yml` by hand to match. Keep the `label`, `summary` and `address` fields in `cv.yml`: the CV page displays them, even though RenderCV itself would reject them.
 
 **Alternative Format (JSONResume):** For an alternative format, see `assets/json/resume.json` which uses the [JSONResume](https://jsonresume.org/) standard. Switch between formats using the `cv_format` frontmatter variable in `_pages/cv.md` (options: `rendercv` or `jsonresume`).
 
