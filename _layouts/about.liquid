@@ -1,8 +1,10 @@
 ---
 layout: default
 ---
+{% comment %} With no bio text, center the name, photo and details instead of floating the photo beside an empty column. {% endcomment %}
+{% assign bio_length = content | strip_html | strip | size %}
 <div class="post">
-  <header class="post-header">
+  <header class="post-header{% if bio_length == 0 %} text-center{% endif %}">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
         <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
@@ -16,7 +18,7 @@ layout: default
 
   <article>
     {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+      <div class="profile {% if bio_length == 0 %}mx-auto text-center{% elsif page.profile.align == 'left' %}float-left{% else %}float-right{% endif %}">
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% if page.profile.image_circular %}

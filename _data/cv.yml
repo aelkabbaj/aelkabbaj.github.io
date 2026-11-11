@@ -1,9 +1,8 @@
 cv:
   name: Anass El Kabbaj
-  label: FPGA & Embedded Systems Engineer
+  label: FPGA Development Engineer
   email: aelkabbaj@proton.me
-  location: Saint-Cyr-l'École, France
-  summary: "FPGA design engineer in NanoXplore's Soft IP team, building IP for space-grade FPGAs under the ECSS flow. Seeking a PhD in FPGA-based systems for space and astronomy."
+  location: Sèvres, France
 
   social_networks:
     - network: LinkedIn
@@ -12,7 +11,7 @@ cv:
       username: aelkabbaj
 
   address:
-    city: Saint-Cyr-l'École
+    city: Sèvres
     region: France
 
   sections:
