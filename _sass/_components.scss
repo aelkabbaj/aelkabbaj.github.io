@@ -216,7 +216,7 @@ ul.task-list input[type="checkbox"] {
 }
 
 // Profile card: about page without bio text (see _layouts/about.liquid).
-// Photo on the left, name / title / details / links on the right; stacked on phones.
+// Photo (uncropped) on the left, name / title / details / links on the right; stacked on phones.
 .profile-card {
   display: flex;
   align-items: center;
@@ -233,8 +233,7 @@ ul.task-list input[type="checkbox"] {
 
     img {
       width: 100%;
-      aspect-ratio: 4 / 5;
-      object-fit: cover;
+      height: auto;
     }
   }
 
@@ -294,11 +293,6 @@ ul.task-list input[type="checkbox"] {
     .profile-card-photo {
       flex-basis: auto;
       width: 180px;
-
-      img {
-        aspect-ratio: 1 / 1;
-        object-position: 50% 25%;
-      }
     }
 
     .social {
