@@ -8,7 +8,7 @@
       {% if entry.icon %}
         <i class="{{ entry.icon }}"></i>
       {% endif %}
-      
+
       {% if entry.keywords and entry.keywords.size > 0 %}
         <strong>{{ entry.name }}:</strong>
         {% for keyword in entry.keywords %}
@@ -21,7 +21,6 @@
       {% else %}
         {{ entry.name }}
       {% endif %}
-      
     </div>
   {% endfor %}
 </div>

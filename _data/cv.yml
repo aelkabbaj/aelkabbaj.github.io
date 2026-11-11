@@ -2,101 +2,112 @@ cv:
   name: Anass El Kabbaj
   label: FPGA & Embedded Systems Engineer
   email: aelkabbaj@proton.me
-  location: Île-de-France, France
-  image: "Anass_vertical.jpg"
-  summary: "Final-year Embedded Systems Engineering student with practical experience in FPGA design and High-Level Synthesis. Eager to deepen my technical expertise and tackle complex hardware challenges."
+  location: Saint-Cyr-l'École, France
+  summary: "FPGA design engineer in NanoXplore's Soft IP team, building IP for space-grade FPGAs under the ECSS flow. Seeking a PhD in FPGA-based systems for space and astronomy."
 
   social_networks:
     - network: LinkedIn
       username: anass-el-kabbaj
+    - network: GitHub
+      username: aelkabbaj
 
   address:
-    city: Île-de-France
+    city: Saint-Cyr-l'École
     region: France
 
   sections:
-    Education:
-      - institution: ENSEIRB-MATMECA (Bordeaux INP)
-        location: Bordeaux, France
-        area: Electronics (Embedded Systems Major)
-        studyType: Master of Engineering
-        start_date: 2023-09
-        end_date: Present
-        highlights:
-          - "Key Modules: Computer Architecture, VHDL, Embedded Systems, IoT, Hardware Security, Signal Processing."
-
-      - institution: CPGE Mohammed V
-        location: Casablanca, Morocco
-        area: Mathematics and Physics (MPSI / MP)
-        studyType: Preparatory Classes for Engineering Schools
-        start_date: 2021-09
-        end_date: 2023-06
-        highlights:
-          - "Intensive training in Mathematics and Physics. Preparation for competitive French and Moroccan engineering entrance exams."
-
     Experience:
+      - company: NanoXplore SAS
+        position: FPGA Design Engineer, Soft IP Team
+        location: Sèvres, France
+        start_date: 2026-10
+        end_date: present
+        highlights:
+          - "Porting existing IP cores to NanoXplore's new IP catalog."
+          - "Current IP: clock generation for NG-MEDIUM, NG-ULTRA and ULTRA300; wrapper with added features around the PLL and WFG primitives."
+          - "Design, verification and validation under the ECSS flow (ECSS-E-ST-20-40C, ECSS-Q-ST-60-03C)."
+          - "Evaluation of a SonarQube-based HDL linter (Linty) against the team's use cases and coding rules."
+
       - company: NanoXplore SAS
         position: HLS Research Intern
         location: Sèvres, France
         start_date: 2026-03
-        end_date: Present
+        end_date: 2026-09
         highlights:
-          - "Evaluation and optimization of a High-Level Synthesis (HLS) design flow for NanoXplore FPGAs."
-          - "Benchmarking HLS tools on different applications to evaluate the intrest of HLS in NanoXplore FPGA design flow."
-          - "Tools: Vitis HLS, Bambu HLS, Siemens Catapult, C/C++, VHDL/Verilog, Python scripting."
+          - "Benchmarked HLS tools (Vitis HLS, Bambu, Catapult) on C/C++ designs targeting NanoXplore FPGAs, to assess how HLS could be integrated into the NanoXplore design flow."
+          - "Ported an existing Galaga (1981) arcade RTL design to the ULTRA300 FPGA, wrote the adaptation layers and built the cabinet at a partner fablab."
 
-      - company: Laboratoire d’Astrophysique de Bordeaux (LAB)
+      - company: Laboratoire d'Astrophysique de Bordeaux (LAB)
         position: FPGA Design Intern
         location: Bordeaux, France
         start_date: 2025-05
         end_date: 2025-09
         highlights:
-          - "Digitization and transmission module (DGSPOT) for the ALMA telescope upgrade."
-          - "Development of VHDL/Verilog DSP modules (Histograms, Lag-0 Correlation) on Intel Agilex 7."
-          - "From MATLAB simulations to RTL implementation. Functional verification and on-target validation."
-          - "Tools: Quartus Prime Pro, ModelSim, Synplify, MATLAB."
+          - "Developed VHDL signal-processing modules (histograms, lag-0 correlation) on **Intel Agilex 7** for the digitization and transmission module of the ALMA radio telescope Wideband Sensitivity Upgrade."
+          - "From MATLAB models to RTL (Quartus Prime Pro, Synplify), verified in ModelSim and validated on target."
 
-      - company: EirSpace (Aerospace Association)
+      - company: EirSpace (student aerospace association)
         position: Rocketry Division Lead
         location: Bordeaux, France
         start_date: 2024-05
         end_date: 2025-05
         highlights:
-          - "Design: Development of flight avionics (ESP32/Arduino). PCB Design using KiCad."
-          - "Integration: Mechanical assembly, recovery system testing, and flight chain validation."
+          - "Supervised the mini-rocket teams for C'Space (CNES / Planète Sciences)."
+          - "Built the flight avionics (ESP32/Arduino, KiCad PCB); handled mechanical integration and recovery-system tests."
+
+    Education:
+      - institution: ENSEIRB-MATMECA (Bordeaux INP)
+        location: Bordeaux, France
+        studyType: Diplôme d'Ingénieur (Master's degree) in Electronics
+        area: Embedded Systems major
+        start_date: 2023
+        end_date: 2026
+        highlights:
+          - "Key modules: Computer Architecture, VHDL/HLS, Signal Processing, Hardware Security."
+
+      - institution: CPGE Mohammed V
+        location: Casablanca, Morocco
+        studyType: Preparatory classes (MPSI/MP)
+        area: Intensive mathematics and physics
+        start_date: 2021
+        end_date: 2023
 
     Projects:
-      - name: Long-Range Telemetry System
-        summary: "LoRa, ESP32, C++"
-        start_date: 2024-01
-        end_date: 2024-12
+      - name: RISC-V FFT Optimization
+        summary: "*SystemVerilog, C* · 2025"
         highlights:
-          - "Long-range fragmented image transmission via LoRa (434 MHz) for experimental rockets."
-          - "Development of a packet-loss robust communication protocol."
+          - "Optimized an FFT on the **CV32A6** RISC-V soft core, using custom instructions that offload the intensive computations to a dedicated hardware coprocessor."
+
+      - name: Long-Range Telemetry System
+        summary: "*LoRa, ESP32, C++* · 2024"
+        highlights:
+          - "Fragmented image transmission over LoRa (434 MHz) for experimental rockets, robust to packet loss."
 
     Skills:
       - name: Hardware & FPGA
         icon: fa-solid fa-microchip
-        keywords: "VHDL, HLS, RISC-V, Quartus, Vivado"
-        
-      - name: Software & Tools
+        keywords: "VHDL, (System)Verilog, HLS (Vitis HLS, Bambu, Catapult), RISC-V"
+
+      - name: FPGA Tools
+        icon: fa-solid fa-screwdriver-wrench
+        keywords: "Impulse (NanoXplore), Quartus Prime Pro, Vivado, Questa/ModelSim, Synplify"
+
+      - name: Software
         icon: fa-solid fa-code
-        keywords: "C/C++, Python, Embedded Systems, IoT, MATLAB, Git, LaTeX"
+        keywords: "C/C++, Python, MATLAB, Embedded Linux, Git/GitLab, LaTeX"
 
     Languages:
-      - name: Arabic
-        summary: "Native"
+      - name: English
+        summary: "C1"
       - name: French
         summary: "Bilingual"
-      - name: English
-        summary: "IELTS C1"
+      - name: Arabic
+        summary: "Native"
 
     Interests:
       - name: Astronomy
         icon: fa-solid fa-star
-      - name: Ham Radio
+      - name: Ham radio (CEPT/HAREC)
         icon: fa-solid fa-walkie-talkie
-      - name: DIY Electronics
+      - name: DIY electronics
         icon: fa-solid fa-robot
-      - name: Hiking
-        icon: fa-solid fa-person-hiking
