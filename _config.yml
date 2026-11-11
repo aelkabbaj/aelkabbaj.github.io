@@ -6,8 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Anass
 middle_name:
 last_name: EL KABBAJ
-contact_note: >
-  “What I cannot create, I do not understand.” — Richard Feynman
+contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Anass El Kabbaj, FPGA Development Engineer based in Sèvres, France.
 footer_text: >
